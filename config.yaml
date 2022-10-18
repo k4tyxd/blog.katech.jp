@@ -1,4 +1,33 @@
-baseURL: http://example.org/
-languageCode: en-us
-title: My New Hugo Site
+title: katy.log
+baseURL: https://blog.katech.jp/
+languageCode: jp
 theme: stack
+
+params:
+  mainSections:
+    - posts
+  dateFormat:
+    published: "2006-01-02 15:04:05-07:00"
+    lastUpdated: "2006-01-02 15:04:05-07:00"
+  article:
+    toc: true
+  widgets:
+    page:
+      - type: toc
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: false
+    tabWidth: 4
