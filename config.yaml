@@ -25,6 +25,14 @@ params:
     page:
       - type: search
       - type: toc
+  sidebar:
+    compact: false
+    emoji: 💩
+    subtitle: Gamer, Web Engineer
+    avatar:
+      enabled: true
+      local: false
+      src: "/images/k4tyxd.png"
 
 permalinks:
   post: /posts/:filename/
