@@ -34,6 +34,20 @@ params:
       local: false
       src: "/images/k4tyxd.png"
 
+menu:
+  main:
+  social:
+    - identifier: twitter
+      name: twitter
+      url: https://twitter.com/k4tyxd
+      params:
+        icon: brand-twitter
+    - identifier: github
+      name: GitHub
+      url: https://github.com/k4tyxd
+      params:
+        icon: brand-github
+
 permalinks:
   post: /posts/:filename/
   page: /:slug/
