@@ -36,6 +36,20 @@ params:
 
 menu:
   main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: -100
+      params:
+        newTab: false
+        icon: home
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 1
+      params:
+        newTab: false
+        icon: search
   social:
     - identifier: twitter
       name: twitter
