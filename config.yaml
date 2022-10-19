@@ -4,16 +4,67 @@ languageCode: jp
 theme: stack
 
 params:
-  mainSections:
-    - posts
   dateFormat:
     published: "2006-01-02 15:04:05-07:00"
     lastUpdated: "2006-01-02 15:04:05-07:00"
+  favicon: /images/favicon.ico
   article:
     toc: true
   widgets:
+    homepage:
+      - type: search
+      - type: archives
+        params:
+          limit: 5
+      - type: categories
+        params:
+          limit: 10
+      - type: tag-cloud
+        params:
+          limit: 10
     page:
+      - type: search
       - type: toc
+  sidebar:
+    compact: false
+    emoji: 💩
+    subtitle: Gamer, Web Engineer
+    avatar:
+      enabled: true
+      local: false
+      src: "/images/k4tyxd.png"
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: -100
+      params:
+        newTab: false
+        icon: home
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 1
+      params:
+        newTab: false
+        icon: search
+  social:
+    - identifier: twitter
+      name: twitter
+      url: https://twitter.com/k4tyxd
+      params:
+        icon: brand-twitter
+    - identifier: github
+      name: GitHub
+      url: https://github.com/k4tyxd
+      params:
+        icon: brand-github
+
+permalinks:
+  post: /posts/:filename/
+  page: /:slug/
 
 markup:
   goldmark:
