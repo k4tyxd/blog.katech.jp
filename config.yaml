@@ -13,6 +13,10 @@ params:
     page:
       - type: toc
 
+permalinks:
+  post: /posts/:filename/
+  page: /:slug/
+
 markup:
   goldmark:
     renderer:
